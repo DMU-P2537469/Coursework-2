@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS\stylesheetlogin.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+  </head>
+  <body>
+
+    <!-- Inspiration from https://www.youtube.com/watch?v=fHqjQBRQxUI -->
+<!--- div to hold all the content on the page  --->
+<div class="split-screen">
+
+<!--- div to host the left side elements of the page this including the background image url  --->
+  <div class="left">
+
+    <section class="copy">
+<!--- text description for the left section of the page  --->
+      <h1>The Most Covert Clothing Store!</h1>
+
+      <p>Find the latest clothes in fashion today only at X-Supply</p>
+
+    </section>
+
+  </div>
+
+<!--- right side contains the interatable elements of the page- this being clickable input text boxes and navigational buttons  --->
+<div class="right">
+<form>
+
+  <section class="copy">
+<!--- navigational logo to bring the user back to the homepage  --->
+<a href="index.html"><img src="Images\Navigation Icons\Multimedia Logo.png" alt="mainlogo"></a>
+
+    <h2>Sign Up</h2>
+<!--- Once the user has inputed there details they are eligable to travel to the loginpage and signin  --->
+    <div class="login-container">
+
+    <p>Already have an account? <a href="Loginpage.html">
+
+    <strong>Log In</strong></a>
+
+    </p>
+
+  </div>
+
+</section>
+<!--- Containers hosting input boxes for the users --->
+<div class="input-container name">
+  <label for="fname">Full Name</label>
+  <input id="fname" name="fname" type="text">
+</div>
+
+<div class="input-container email">
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email">
+</div>
+
+<div class="input-container password">
+  <label for="password">Password</label>
+  <input id="password" name="password" placeholder="Must be at least 6 characters" type="password">
+</div>
+<div class="input-container cta">
+  <label class="checkbox-container">
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    Sign up for email updates.
+  </label>
+</div>
+<a href="Loginpage.html" class="buttonsignin">Sign In</a>
+<section class="copy legal">
+  <p><span class="small"> By continuing, you agree to accept our <br> <a href="#"> Privacy Policy</a> &amp; <a href="#">Terms of Service</a>.</span></p>
+</section>
+
+
+
+  </div>
+</form>
+
+</div>
+
+
+  </body>
+</html>

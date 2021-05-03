@@ -1,0 +1,230 @@
+/* Global Effects */
+:root {
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  --primary-blue: #233975;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+}
+
+/* Header Adjustments */
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Anchor Design */
+a {
+  text-decoration: none;
+  color: var(--primary-blue);
+}
+/* Anchor hover design */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Small inprint text */
+.small {
+  font-size: 80%;
+  text-align: center;
+}
+
+/* Div Class hosting all the elements on the screen - Providing a flex display on all elements for responsive design */
+.split-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Left Section Characteristics */
+.left {
+  height: 200px;
+}
+
+/* Left + Right Responsive design Adjustments + organized layout */
+.left, .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../Images/Backgrounds/bgimage.jpeg');
+  background-size: cover;
+}
+
+.left .copy {
+  color: lightgrey;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.left p {
+  font-weight: 400
+}
+
+/* Right Section Logo Image Adjustments */
+.copy img {
+  width: 50%;
+  height: auto;
+
+}
+
+/* Right Section characteristics */
+.right {
+  background-color: white;
+}
+
+.right .copy {
+  color: black;
+  text-align: center;
+
+}
+
+.right .copy p {
+  margin: 1.5em 0;
+  font-size: 0.875rem;
+}
+
+.right form {
+  width: 328px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #c4c4c4;
+  padding: 1em;
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+/* Box Label Characteristics */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* Informational Input */
+.input-container.password {
+  position:relative;
+}
+
+.input-container.password i {
+  position: absolute;
+  top: 42px;
+  right: 16px;
+}
+/* Responsive Positioning */
+.input-container.cta {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Container Interaction */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Checkbox Container Design */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 0 1.25rem 0;
+}
+/* Checkmark Box Interactible */
+.checkbox-container input:checked-.checkmark {
+  background-color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+/* Custom Checkmark Design */
+.checkmark {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background:white;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  top: -4px;
+  left: 0;
+}
+
+/* Checkmark Interaction after click  */
+.checkmark:after {
+  content:"";
+  position: absolute;
+  display: none;
+}
+
+/* Checkmark Functionality */
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Checkbox container Design */
+.checkbox-container .checkmark:after {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  width: 5px;
+  height: 10px;
+  left: 8px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+
+/* Sign in button design - Smoothed edges and colors */
+a.buttonsignin {
+  display: block;
+     width: 300px;
+     height: 25px;
+     background: #0000ff;
+     padding: 10px;
+     text-align: center;
+     border-radius: 40px;
+     color: white;
+     font-weight: bold;
+     line-height: 25px;
+}
+
+/* Sign in button hover design */
+a.buttonsignin:hover{
+background-color: #4d4dff;
+}
+
+
+/* Signin + Login Responsive Page Design Media Queries */
+@media screen and (min-width: 900px) {
+  .split-screen {
+    flex-direction: row;
+    height: 100vh;
+  }
+  .left,
+  .right {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+}

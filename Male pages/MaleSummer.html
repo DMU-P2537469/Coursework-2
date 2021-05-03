@@ -1,0 +1,185 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS\stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://app.snipcart.com">
+    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css"/>
+
+
+    <title>Summer Catalogue (Male)</title>
+  </head>
+  <body>
+
+    <!--- Header Section --->
+
+    <header>
+        <div class="nav">
+        <ul class= "headernav">
+            <a href="../index.html" class="headerlogoimg">
+              <img src="../Images\Navigation Icons\Multimedia Logo.png" alt="xsupplylogo">
+            </a>
+          <li class="btn">
+            <a href="../Browsepage.html">Browse</a>
+          </li>
+          <li class="btn">
+            <a href="../MaleClothes.html">Male</a>
+          </li>
+          <li class="btn">
+            <a href="../FemaleClothes.html">Female</a>
+          </li>
+          <li class="btn">
+            <a href="../About.html">About</a>
+          </li>
+          <li class="btn">
+            <a href="../Contactpage.html">Contact</a>
+          </li>
+          <li class="btn">
+            <a href="../Loginpage.html">Account</a>
+          </li>
+          <button class="snipcart-checkout"><img src="../Images\Navigation Icons\Basket icon.png"></button>
+          </ul>
+        </div>
+    </header>
+
+    <!--- Page Content --->
+    <!--- section class holds the css code for the pages background image url and the font details such as font-family and font sizes/colors  --->
+
+  <section class="contentMSUM">
+<!--- back button used to navigate the user in there browser history by 1 page (this is useful for those on mobile devices)  --->
+<input class="backbutton" type="button" value="Back" onclick="history.back(-1)"/>
+<!--- Title of the catalogue item  --->
+
+      <h1>Summer Catalogue</h1>
+<div class="clothes-container">
+<!--- List of images within a container, this container holds the name and price of the product. A button is present underneath each item to navigate the user to a purchase/basket screen, this overlay is run off the snipcart script  --->
+
+<!-- Inspiration from https://thomcorah.github.io/dmu-multimedia/lab-reader.html?E-Commerce-lab.md -->
+  <div class="container">
+    <img src="../Images\clothing images\Male\Summer\Adidas Glasses Male Summer.png" alt="SummerMale1">
+    <h1>Adidas Glasses</h1>
+    <p>£60.00</p>
+    <button
+  class="snipcart-add-item"
+  data-item-id="Summer"
+  data-item-price="60.00"
+  data-item-url="/"
+  data-item-description="Adidas beach wear shades!"
+  data-item-image="../Images\clothing images\Male\Summer\Adidas Glasses Male Summer.png"
+  data-item-name="Adidas Glasses"
+  data-item-custom1-name="Size"
+  data-item-custom1-options="Small|Medium [+5.00]|Large[+10.00]"
+>Add To Cart </button>
+  </div>
+
+  <div class="container">
+    <img src="../Images\clothing images\Male\Summer\Calvin Klein Tank Top Summer Male.png" alt="SummerMale2">
+    <h1>Calvin Klein Tank Top</h1>
+    <p>£25.00</p>
+    <button
+  class="snipcart-add-item"
+  data-item-id="Summer"
+  data-item-price="25.00"
+  data-item-url="/"
+  data-item-description="All white Tank Top by Calvin Klein!"
+  data-item-image="../Images\clothing images\Male\Summer\Calvin Klein Tank Top Summer Male.png"
+  data-item-name="Calvin Klein Tank Top"
+  data-item-custom1-name="Size"
+  data-item-custom1-options="Small|Medium [+5.00]|Large[+10.00]"
+>Add To Cart </button>
+  </div>
+
+  <div class="container">
+    <img src="../Images\clothing images\Male\Summer\Next Men Summer Hat.png" alt="SummerMale3">
+    <h1>Summer Hat</h1>
+    <p>£10.00</p>
+    <button
+  class="snipcart-add-item"
+  data-item-id="Summer"
+  data-item-price="10.00"
+  data-item-url="/"
+  data-item-description="HandCrafted Beach Hats!"
+  data-item-image="../Images\clothing images\Male\Summer\Next Men Summer Hat.png"
+  data-item-name="Summer Hat"
+  data-item-custom1-name="Size"
+  data-item-custom1-options="Small|Medium [+5.00]|Large[+10.00]"
+>Add To Cart </button>
+  </div>
+
+  <div class="container">
+    <img src="../Images\clothing images\Male\Summer\Nike Summer Swimmers Male.png" alt="SummerMale4">
+    <h1>Nike Swimmers</h1>
+    <p>£30.00</p>
+    <button
+  class="snipcart-add-item"
+  data-item-id="Summer"
+  data-item-price="30.00"
+  data-item-url="/"
+  data-item-description="Nike Swimming Trunks!"
+  data-item-image="../Images\clothing images\Male\Summer\Nike Summer Swimmers Male.png.jpg"
+  data-item-name="Nike Swimmers"
+  data-item-custom1-name="Size"
+  data-item-custom1-options="Small|Medium [+5.00]|Large[+10.00]"
+>Add To Cart </button>
+  </div>
+
+</div>
+
+  </section>
+
+<!--- Footer Section --->
+<!--Inspiration from https://blog.eduonix.com/web-programming-tutorials/build-responsive-website-footer-using-html-css/-->
+  <footer class="footer-distributed">
+
+  			<div class="footer-left">
+            <a href="../index.html"><img src="../Images\Navigation Icons\Multimedia Logo.png"></a>
+  				<h3>X-<span>Supply</span></h3>
+
+  				<p class="footer-links">
+  					<a href="../index.html">Home</a>
+  					|
+  					<a href="../About.html">About</a>
+  					|
+  					<a href="../Contactpage.html">Contact</a>
+  				</p>
+
+  				<p class="footer-company-name">© 2021 Harvey Claxton Student @DMU.</p>
+  			</div>
+
+  			<div class="footer-center">
+  				<div>
+  					<i class="fa fa-map-marker"></i>
+  					  <p><span>LE 12 ABC , Leicestershire, DMU - De Montfort University</p>
+  				</div>
+
+  				<div>
+  					<i class="fa fa-phone"></i>
+  					<p>+44 123456789</p>
+  				</div>
+  				<div>
+  					<i class="fa fa-envelope"></i>
+  					<p>xsupply@gmail.com</p>
+  				</div>
+  			</div>
+  			<div class="footer-right">
+  				<p class="footer-company-about">
+  					<span>About X-Supply</span>
+  					We sell the most limited and highest quality products on the market!</p>
+  				<div class="footer-icons">
+  					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+  					<a href="https://twitter.com/home"><i class="fa fa-twitter"></i></a>
+  					<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+  				</div>
+  			</div>
+  		</footer>
+
+<!--- Global Basket script --->
+
+      <script async src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"></script>
+      <div hidden id="snipcart" data-api-key="YTBmMjUzZTMtNzFkNi00NjZlLTg2NDYtMDU5NGZkZTEwOWNjNjM3NTQ5ODI4OTgzNDA4NjA0"></div>
+
+
+    </body>
+  </html>
